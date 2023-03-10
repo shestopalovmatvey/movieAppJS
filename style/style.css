@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#1c1917 50%, #ffb92a 50%);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding: 1.5em;
+    background-color: #061b31;
+    height: 100px;
+    width: 600px;
+    border-radius: 15px;
+}
+
+.container .block__search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .block__search .input__movie {
+    padding: 0.5em;
+    flex-basis:78%;
+    background-color: #061b31;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.container .block__search .input__movie::placeholder {
+    font-size: 15px;
+}
+
+.container .block__search .btn_search {
+    padding: 0.5em 1em;
+    background-color: #F4A92A;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: all 0.4s ease;
+}
+
+.container .block__search .btn_search:active {
+    background-color: #a67a2d;
+    transform: scale(1.2);
+}
+
+.container .error {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 22px;
+    display: none;
+}
+
+.container .movie__info {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    gap: 20px;
+}
+
+.container .movie__info .img {
+    display: none;
+}
+
+.container .movie__info .img > img {
+    width: 200px;
+    height: 280px;
+}
+
+.container .movie__info .title {
+    display: none;
+}
+
+.container .movie__info .title h2 {
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.container .movie__info .title .rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container .movie__info .title .rating p {
+    margin-left: 10px;
+}
+
+.container .movie__info .title .rating > img {
+    width: 20px;
+    height: 20px;
+}
+
+.container .movie__info .title .genres {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .movie__info .title .genres .genres__text {
+    padding: 0.5em 1em;
+    border: 0.5px solid white;
+    border-radius: 10px;
+}
+
+.container .movie__info .title .director {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.container .movie__info .title .director .director__line {
+    border: 1px solid white;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-top: 0.5em;
+}
+
+.container .movie__text {
+    margin-top: 20px;
+    transition: all 1s ease-in;
+}
+
+.container .movie__text label {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.container .movie__text p {
+    color: #a0a0a0;
+}
+
+.container .movie__text .movie__cast {
+    margin-top: 20px;
+}
